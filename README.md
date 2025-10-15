@@ -1,112 +1,46 @@
-Smart Indoor Air Quality Monitor 🚦
-A real-time, affordable indoor air quality monitor using Arduino and C — LCD display, RGB LED, buzzer alerts, and cloud-ready code.
+#  Smart Indoor Air Quality Monitoring System using Arduino
 
-🚀 Overview
-Indoor air pollution is a significant problem—but accessible, affordable monitoring is missing for most homes/offices. This project leverages Arduino + procedural C to deliver a modular, low-cost, professional solution supporting both hardware and simulation.
+This project is a real-time indoor air quality (IAQ) monitoring system developed using an Arduino Uno and programmed in C. It integrates a gas sensor, an LCD display, and an RGB LED to provide multi-stage visual and audible alerts based on air quality. The entire system is simulated in the Tinkercad Circuits environment.
 
-PPM air quality readings (sensor or potentiometer)
+---
 
-Color-coded alerts: Green (Good), Yellow/Blue (Moderate), Red (Poor/Danger)
+### ✨ Features
 
-Buzzer for critical levels
+- **Real-Time Monitoring:** Continuously reads data from the MQ135 gas sensor.
+- **Live Data Display:** Shows the current air quality in Parts Per Million (PPM) on a 16x2 LCD screen.
+- **Multi-Stage Visual Alerts:** An RGB LED provides instant, color-coded status updates:
+  - 🟢 **Green:** Good
+  - 🔵 **Blue:** Moderate
+  - 🔴 **Red:** Poor / Danger
+- **Audible Alarm:** A buzzer sounds an alarm when air quality reaches critical levels.
+- **Manual Override:** A pushbutton allows for immediate, on-demand sensor readings.
 
-LCD output and manual-check button
+---
 
-Tinkercad simulation for virtual demo
+### 🛠️ Hardware & Tech Stack
 
-Open hardware and open source
+- **Microcontroller:** Arduino Uno R3
+- **Sensor:** MQ135 Gas Sensor
+- **Display:** 16x2 LCD Display
+- **Outputs:** RGB LED, Active Buzzer
+- **Programming Language:** C (in Arduino IDE)
+- **Simulation Environment:** Autodesk Tinkercad
 
-📸 Demo / Circuit
-🛠️ Features
-Real-time Air Quality Measurement
+---
 
-Multi-level Alerts: Visual (RGB), Audio (buzzer), LCD status
+### 🔌 Circuit Diagram
 
-Manual check: User button to instantly update readings
+Here is the final circuit diagram for the project.
 
-Portable and extendable: Easy to add IoT cloud, logging, mobile notifications
+![Circuit Diagram](https://drive.google.com/file/d/1-T_g8cTJkF_gVju2XdckPLAPNu9xFjB-/view?usp=sharing)
 
-Documentation Included: Report, BOM, code, and simulation instructions
+---
 
-⚡ Quick Start
-1. Hardware/Simulation Requirements
-Arduino Uno R3
+### 🚀 How to Use
 
-MQ135 Gas Sensor or Potentiometer (for simulation)
+1.  Open the project in [Autodesk Tinkercad](https://drive.google.com/file/d/1wh1Ux5vF5jtgeIOV-C2YZmSn5ClbKjZr/view?usp=drive_link).
+2.  Start the simulation.
+3.  Click on the MQ135 gas sensor to bring up the simulation interface.
+4.  Move the "gas cloud" or slider to change the gas concentration and observe the system's response on the LCD, LED, and buzzer.
 
-RGB LED + 3x 220Ω resistors
-
-16x2 LCD display + potentiometer
-
-Buzzer, pushbutton, breadboard, jumper wires
-
-2. Building the Circuit
-See images/circuit-diagram.jpg for full wiring.
-In Tinkercad, use a potentiometer as analog input to simulate the gas sensor.
-
-3. Code Upload
-Open air_quality_monitor.ino
-
-Upload to Arduino (or paste into Tinkercad Code)
-
-Start simulation / power on
-
-🖥️ How It Works
-Green: Air quality is good
-
-Yellow/Blue: Moderate, caution (mixture on RGB)
-
-Red & Buzzer: Poor/dangerous, take action
-
-PPM (parts per million) estimated from sensor or potentiometer analog value
-
-Press button for instant manual reading
-
-📊 Results
-LCD shows [PPM: value] [Status: GOOD/MODERATE/POOR/DANGER!]
-
-RGB LED changes color based on threshold
-
-Buzzer sounds for dangerous air quality
-
-System is modular and easy for further extension or educational demos
-
-📚 Documentation
-Project Report PDF
-
-Bill of Materials (BOM)
-
-Sample code with comments
-
-Simulation Instructions
-
-Screenshots/Step Photos
-
-🌱 Applications
-Smart home air quality
-
-Schools and STEM education labs
-
-Condition monitoring for offices/classrooms
-
-DIY/Prototyping for startups and IoT projects
-
-💡 Future Roadmap
-Add WiFi/IoT connectivity for cloud/data logging
-
-Multi-sensor support (temperature, humidity, CO2)
-
-Android/iOS notification integration
-
-Compact PCB version
-
-👨‍💻 Contributing
-Contributions, pull requests, and forks welcome! See CONTRIBUTING.md.
-
-📢 Contact & Credits
-Created by K Mounesh
-Email: kaliyugiheart@gmail.com
-University: Amrita Vishwa Vidyapeetham, Nagercoil
-Video Link: https://drive.google.com/file/d/1wh1Ux5vF5jtgeIOV-C2YZmSn5ClbKjZr/view?usp=drive_link
-
-Images, report, and code © 2025
+---
